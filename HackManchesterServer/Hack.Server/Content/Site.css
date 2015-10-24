@@ -50,6 +50,7 @@ textarea {
     flex: 1;
     padding: 10px;
     font-weight: 400;
+    overflow: hidden;
 }
 
 .home-question-tags {

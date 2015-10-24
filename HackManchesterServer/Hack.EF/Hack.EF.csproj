@@ -67,6 +67,14 @@
     <Compile Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.Designer.cs">
       <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510242040049_OfferFields.cs" />
+    <Compile Include="Migrations\201510242040049_OfferFields.Designer.cs">
+      <DependentUpon>201510242040049_OfferFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510242047461_OfferFields1.cs" />
+    <Compile Include="Migrations\201510242047461_OfferFields1.Designer.cs">
+      <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.resx">
       <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510242040049_OfferFields.resx">
+      <DependentUpon>201510242040049_OfferFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510242047461_OfferFields1.resx">
+      <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

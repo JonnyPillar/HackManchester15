@@ -25,5 +25,6 @@ namespace Hack.Domain.Entities
         public User User { get; set; }
         public long UserId { get; set; }
         public virtual ICollection<QuestionTag> QuestionTags { get; set; }
+        public virtual ICollection<Offer> Offers { get; set; }
     }
 }

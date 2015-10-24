@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6E736CE5-D899-4387-B3D6-8CF7D2D5AD09}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5C4C7DED-0F85-48DC-ACCA-BC9DD3E035F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.Server", "Hack.Server\Hack.Server.csproj", "{2416647C-DCD2-477B-8191-2BA14E0A3028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.Domain", "Hack.Domain\Hack.Domain.csproj", "{35D7760A-450C-4F33-8E52-4A6D758A9EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.EF", "Hack.EF\Hack.EF.csproj", "{CC95CDD8-ACEA-4204-942F-5CD321C26A10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.Services", "Hack.Services\Hack.Services.csproj", "{76B05199-1C3B-4556-801E-7A8A4BBC0B5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2416647C-DCD2-477B-8191-2BA14E0A3028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2416647C-DCD2-477B-8191-2BA14E0A3028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2416647C-DCD2-477B-8191-2BA14E0A3028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2416647C-DCD2-477B-8191-2BA14E0A3028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D7760A-450C-4F33-8E52-4A6D758A9EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D7760A-450C-4F33-8E52-4A6D758A9EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D7760A-450C-4F33-8E52-4A6D758A9EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D7760A-450C-4F33-8E52-4A6D758A9EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC95CDD8-ACEA-4204-942F-5CD321C26A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC95CDD8-ACEA-4204-942F-5CD321C26A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC95CDD8-ACEA-4204-942F-5CD321C26A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC95CDD8-ACEA-4204-942F-5CD321C26A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B05199-1C3B-4556-801E-7A8A4BBC0B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B05199-1C3B-4556-801E-7A8A4BBC0B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B05199-1C3B-4556-801E-7A8A4BBC0B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B05199-1C3B-4556-801E-7A8A4BBC0B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35D7760A-450C-4F33-8E52-4A6D758A9EDF} = {5C4C7DED-0F85-48DC-ACCA-BC9DD3E035F4}
+		{CC95CDD8-ACEA-4204-942F-5CD321C26A10} = {5C4C7DED-0F85-48DC-ACCA-BC9DD3E035F4}
+		{76B05199-1C3B-4556-801E-7A8A4BBC0B5D} = {5C4C7DED-0F85-48DC-ACCA-BC9DD3E035F4}
+	EndGlobalSection
+EndGlobal

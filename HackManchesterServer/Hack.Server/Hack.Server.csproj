@@ -193,6 +193,7 @@
     <Compile Include="Attributes\CustomAuthoriseAttribute.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DependencyInjection\DefaultRegistry.cs" />
     <Compile Include="DependencyInjection\IoC.cs" />
@@ -264,6 +265,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Scripts\main.jsx" />
     <Content Include="Views\Home\_partial\_question.cshtml" />
+    <Content Include="Views\Question\Details.cshtml" />
+    <Content Include="Views\Question\_partials\_questionComment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hack.Domain\Hack.Domain.csproj">

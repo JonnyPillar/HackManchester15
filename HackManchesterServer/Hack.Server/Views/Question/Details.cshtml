@@ -1,0 +1,16 @@
+﻿@model Hack.Server.Controllers.QuestionDetailViewModel
+
+<div class="question-detail">
+    <div>
+        @Model.Title
+    </div>
+    <div>
+        @Model.Description
+    </div>
+    <div>
+        @foreach (var comment in Model.Comments)
+        {
+            @Html.Partial("_partials/_questionComment", comment)
+        }
+    </div>
+</div>

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DataContracts\ApiRequests\LoginRequest.cs" />
     <Compile Include="DataContracts\ApiRequests\LogoutRequest.cs" />
+    <Compile Include="DataContracts\ApiRequests\SubmitOfferRequest.cs" />
     <Compile Include="DataContracts\ApiResponses\LoginResponse.cs" />
     <Compile Include="DataContracts\ApiResponses\QuestionTagsResponse.cs" />
     <Compile Include="DataContracts\ApplicationUser.cs" />

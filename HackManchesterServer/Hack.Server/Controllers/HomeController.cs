@@ -29,7 +29,7 @@ namespace Hack.Server.Controllers
             Id = question.Id;
             Title = question.Title;
             Description = question.Description;
-            if (question.QuestionTags.Count > 1)
+            if (question.QuestionTags.Count >= 1)
             {
                 ImageUrl = question.QuestionTags.First().ImageUrl;
             }

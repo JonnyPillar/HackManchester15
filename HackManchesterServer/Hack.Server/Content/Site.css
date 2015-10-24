@@ -41,6 +41,7 @@ textarea {
 .home-question-details {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .home-question-title {

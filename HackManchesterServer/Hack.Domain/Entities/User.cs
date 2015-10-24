@@ -10,7 +10,7 @@ namespace Hack.Domain.Entities
             // Parameterless constructor for EF
         }
 
-        public User(string username, string password, string forename, string surname)
+        public User(long id, string username, string password, string forename, string surname) : base(id)
         {
             Username = username;
             Password = password;

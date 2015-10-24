@@ -72,10 +72,16 @@ textarea {
     border-radius: 10px;
 }
 
+/*
+    Question
+
+*/
+
 .question-detail {
     display: flex;
     flex-direction: column;
     flex: 1;
+    background-color: #2196fe ;
 }
 
 .question-detail-panel {
@@ -88,12 +94,22 @@ textarea {
 .question-detail-question,  .question-detail-description-title{
     color: white;
     flex: 1;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+
 }
 
 .question-detail-title {
     font-weight: 500;
     color: white;
     flex: 1;
+    color: white;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .question-detail-description {
@@ -102,6 +118,12 @@ textarea {
     border-bottom: 2px solid white;
     flex: 1;
     color: white;
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .question-user-info {
@@ -110,10 +132,81 @@ textarea {
     flex: 1;
 }
 
+.question-user-info-username {
+    color: #eee;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 27px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
 .question-user-info-date {
     text-align: right;
+    color: #bdbdbd ;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .question-detail-offers {
+    background-color: #eee;
+    padding: 15px;
+}
+
+/*
+    Question Comment
+*/
+
+.question-offer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
     background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question-offer-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.question-offer-content-header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.question-comment-text {
+    flex: 1;
+}
+
+.question-comment-datetime {
+    flex: 1;
+    text-align: right;
+}
+
+.question-comment-profile-image{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-color: red;
+    margin: 10px;
+}
+
+.question-comment-select-icon {
+    width: 50px;
 }

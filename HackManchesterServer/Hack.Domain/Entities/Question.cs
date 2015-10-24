@@ -8,5 +8,8 @@ namespace Hack.Domain.Entities
 {
     public class Question : BaseEntity
     {
+        public Question()
+        {
+        }
     }
 }

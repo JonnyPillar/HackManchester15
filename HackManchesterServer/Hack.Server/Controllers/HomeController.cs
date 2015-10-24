@@ -10,7 +10,7 @@ namespace Hack.Server.Controllers
     {
         public ActionResult Index(long id = 0)
         {
-            var questions = HackDbContext.Questions;
+            var questions = HackDbContext.Questions.ToList();
             //var questions = hackDbContext.Questions.Where(x => x.Id == id).ToList();
             return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         }
@@ -25,6 +25,10 @@ namespace Hack.Server.Controllers
         public HomeQuestionViewModel(Question question)
         {
             Id = question.Id;
+        }
+
+        public HomeQuestionViewModel()
+        {
         }
 
         public long Id { get; set; }

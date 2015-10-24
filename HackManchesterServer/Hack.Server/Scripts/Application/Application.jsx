@@ -1,6 +1,3 @@
-﻿ReactDOM.render(
-    <h1>Hello, world! hello</h1>, document.getElementById('exmaple')
-);
+﻿var temp = require ('./Home');
 
-
-//test
+temp();

@@ -1,18 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Hack.Domain.Entities;
+using Hack.EF;
 
 namespace Hack.Server.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            ViewBag.Title = "Home Page";
+        private readonly HackDbContext _hackDbContext = new HackDbContext();
 
-            return View();
+        public ActionResult Index(long id = 0)
+        {
+            var questions = _hackDbContext.Questions;
+            //var questions = hackDbContext.Questions.Where(x => x.Id == id).ToList();
+            return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         }
+    }
+
+    public class HomeQuestionViewModel
+    {
+        public HomeQuestionViewModel(Question question)
+        {
+            Id = question.Id;
+        }
+
+        public long Id { get; set; }
     }
 }

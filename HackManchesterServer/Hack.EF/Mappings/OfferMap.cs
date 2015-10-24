@@ -7,7 +7,8 @@ namespace Hack.EF.Mappings
     {
         public OfferMap() : base("Offer")
         {
-
+            HasRequired(x => x.SubmittedByUser).WithMany(x => x.Offers).HasForeignKey(x => x.SubmittedByUserId).WillCascadeOnDelete(false);
+            HasRequired(x => x.QuestionFor).WithMany(x => x.Offers).HasForeignKey(x => x.QuestionForId);
         }
     }
 }

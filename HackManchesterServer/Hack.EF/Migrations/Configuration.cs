@@ -23,6 +23,7 @@ namespace Hack.EF.Migrations
             SeedUsers(context);
             SeedQuestionTags(context);
             SeedQuestions(context);
+            SeedOffers(context);
         }
 
         private static void SeedUsers(HackDbContext context)
@@ -91,6 +92,19 @@ namespace Hack.EF.Migrations
             };
 
             questions.ForEach(q => context.Questions.AddOrUpdate(x => x.Id, q));
+            context.SaveChanges();
+        }
+
+        private static void SeedOffers(HackDbContext context)
+        {
+            var offers = new List<Offer>()
+            {
+                new Offer(1, "I can help I know about spiders, video call and show me", DateTime.UtcNow, true, 1, 1),
+                new Offer(2, "I think I can help here", DateTime.UtcNow, false, 1, 1),
+                new Offer(3, "Send a photo and I can identify", DateTime.UtcNow, false, 1, 1)
+            };
+
+            offers.ForEach(q => context.Offers.AddOrUpdate(x => x.Id, q));
             context.SaveChanges();
         }
     }

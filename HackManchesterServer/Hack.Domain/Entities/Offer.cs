@@ -4,6 +4,11 @@ namespace Hack.Domain.Entities
 {
     public class Offer : BaseEntity
     {
+        public Offer()
+        {
+            
+        }
+
         public Offer(string text, DateTime offerDateTime, bool videoCallAvailable, long submittedByUserId, long questionForId)
         {
             Text = text;

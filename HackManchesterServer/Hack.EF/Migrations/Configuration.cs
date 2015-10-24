@@ -18,12 +18,6 @@ namespace Hack.EF.Migrations
 
         protected override void Seed(HackDbContext context)
         {
-            context.Tests.Add(new Test
-            {
-                Id = 1,
-                Name = "Test One"
-            });
-            context.SaveChanges();
         }
     }
 }

@@ -195,4 +195,4 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-!ClearScriptV8-32.dll
+!*/ClearScriptV8-32.dll

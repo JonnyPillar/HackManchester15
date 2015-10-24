@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using Hack.Domain.Entities;
+using Hack.EF.Mappings;
 
 namespace Hack.EF
 {
@@ -17,7 +18,16 @@ namespace Hack.EF
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<User>().HasMany(x=>x.)
+            AddModelBuilderConfigurations(modelBuilder);
+        }
+
+        private void AddModelBuilderConfigurations(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new QuestionMap());
+            modelBuilder.Configurations.Add(new QuestionTagMap());
+            modelBuilder.Configurations.Add(new EndorsementMap());
+            modelBuilder.Configurations.Add(new OfferMap());
         }
     }
 }

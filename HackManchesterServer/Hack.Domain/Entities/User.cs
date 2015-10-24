@@ -1,21 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Hack.Domain.Entities
 {
     public class User : BaseEntity
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Forename { get; set; }
-        public string Surname { get; set; }
-        public string Token { get; set; }
-
-        public string GenerateToken()
-        {
-            Token = Guid.NewGuid().ToString("N");
-            return Token;
-        }
-
         public User()
         {
             // Parameterless constructor for EF
@@ -27,6 +16,19 @@ namespace Hack.Domain.Entities
             Password = password;
             Forename = forename;
             Surname = surname;
+        }
+
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Forename { get; set; }
+        public string Surname { get; set; }
+        public string Token { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
+
+        public string GenerateToken()
+        {
+            Token = Guid.NewGuid().ToString("N");
+            return Token;
         }
     }
 }

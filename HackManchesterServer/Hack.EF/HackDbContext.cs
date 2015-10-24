@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using Hack.Domain;
+using Hack.Domain.Entities;
 
 namespace Hack.EF
 {
@@ -9,7 +10,7 @@ namespace Hack.EF
         {
         }
 
-        public virtual DbSet<Test> Tests { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -8,8 +8,6 @@ namespace Hack.Domain.DataContracts.ApiRequests
         [Required]
         public string Text { get; set; }
         [Required]
-        public DateTime OfferDateTime { get; set; }
-        [Required]
         public bool VideoCallAvailable { get; set; }
         [Required]
         public long QuestionForId { get; set; }

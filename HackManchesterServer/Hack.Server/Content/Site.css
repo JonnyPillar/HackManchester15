@@ -37,7 +37,7 @@ textarea {
 }
 
 .home-question-title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     color: #414141;
     flex: 1;
@@ -46,7 +46,7 @@ textarea {
 
 .home-question-description {
     color: #757575;
-    font-size: 30px;
+    font-size: 20px;
     flex: 1;
     padding: 10px;
     font-weight: 400;
@@ -56,5 +56,5 @@ textarea {
     color: #757575;
     background-color: #b7b6b6;
     margin: 10px;   
-    flex: 1;
+    padding: 10px;
 }

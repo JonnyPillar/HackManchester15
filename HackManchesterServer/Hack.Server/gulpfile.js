@@ -18,7 +18,7 @@ var del = require('del');
 var scriptsDir = './Scripts/Application';
 var releaseDir = './Scripts/release';
 var entryPoints = [scriptsDir + '/Application.jsx'];
-var releaseBundleFileName = 'bundle.js';
+var releaseBundleFileName = 'bundlasdasde.js';
 
 var jsLintDir = scriptsDir + '/**/*.js';
 var jsxLintDir = scriptsDir + '/**/*.jsx';

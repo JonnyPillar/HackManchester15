@@ -196,3 +196,4 @@ FakesAssemblies/
 *.opt
 
 !*/ClearScript.V8/*.dll
+!*/bundle.js

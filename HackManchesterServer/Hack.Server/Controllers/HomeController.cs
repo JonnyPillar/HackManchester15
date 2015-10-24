@@ -1,19 +1,22 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Hack.Domain.Entities;
+using Hack.Domain.Interfaces;
 using Hack.EF;
 
 namespace Hack.Server.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly HackDbContext _hackDbContext = new HackDbContext();
-
         public ActionResult Index(long id = 0)
         {
-            var questions = _hackDbContext.Questions;
+            var questions = HackDbContext.Questions;
             //var questions = hackDbContext.Questions.Where(x => x.Id == id).ToList();
             return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+        }
+
+        public HomeController(HackDbContext hackDbContext, IApplicationContext applicationContext) : base(hackDbContext, applicationContext)
+        {
         }
     }
 

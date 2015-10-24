@@ -29,6 +29,7 @@ namespace Hack.Server.Controllers
     {
         public QuestionDetailViewModel(Question question)
         {
+            Id = question.Id;
             Title = question.Title;
             Description = question.Description;
             DateTimeString = DateHelper.DateTimeGenerator(question.QuestionUploadedDateTime);
@@ -43,6 +44,7 @@ namespace Hack.Server.Controllers
         public List<CommentItem> Comments { get; set; }
         public string DateTimeString { get; set; }
         public string UserName { get; set; }
+        public long Id { get; set; }
     }
 
 

@@ -1,6 +1,6 @@
 ﻿@model Hack.Server.Controllers.QuestionDetailViewModel
 
-<div class="question-detail">
+<div class="question-detail" data-id="@Model.Id">
     <div class="question-detail-panel">
         <div class="question-detail-question">
             Question
@@ -30,3 +30,12 @@
         }
     </div>
 </div>
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.question-detail').click(function () {
+            var questionId = jQuery(this).attr('data-id');
+            nativeListener.performClick(questionId);
+        });
+    });
+</script>

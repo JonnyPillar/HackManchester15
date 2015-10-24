@@ -19,31 +19,34 @@ using System.Web.Mvc;
 using Hack.Server;
 using Hack.Server.DependencyInjection;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-using StructureMap;
 using WebActivatorEx;
 
-[assembly: System.Web.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
-[assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
+[assembly: System.Web.PreApplicationStartMethod(typeof (StructuremapMvc), "Start")]
+[assembly: ApplicationShutdownMethod(typeof (StructuremapMvc), "End")]
 
-namespace Hack.Server {
-    public static class StructuremapMvc {
+namespace Hack.Server
+{
+    public static class StructuremapMvc
+    {
         #region Public Properties
 
         public static StructureMapDependencyScope StructureMapDependencyScope { get; set; }
 
         #endregion
-		
-		#region Public Methods and Operators
-		
-		public static void End() {
+
+        #region Public Methods and Operators
+
+        public static void End()
+        {
             StructureMapDependencyScope.Dispose();
         }
-		
-        public static void Start() {
-            IContainer container = IoC.Initialize();
+
+        public static void Start()
+        {
+            var container = IoC.Initialize();
             StructureMapDependencyScope = new StructureMapDependencyScope(container);
             DependencyResolver.SetResolver(StructureMapDependencyScope);
-            DynamicModuleUtility.RegisterModule(typeof(StructureMapScopeModule));
+            DynamicModuleUtility.RegisterModule(typeof (StructureMapScopeModule));
         }
 
         #endregion

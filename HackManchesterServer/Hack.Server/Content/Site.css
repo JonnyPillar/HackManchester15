@@ -71,3 +71,49 @@ textarea {
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+.question-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.question-detail-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.question-detail-question,  .question-detail-description-title{
+    color: white;
+    flex: 1;
+}
+
+.question-detail-title {
+    font-weight: 500;
+    color: white;
+    flex: 1;
+}
+
+.question-detail-description {
+    font-weight: 400;
+    color: white;
+    border-bottom: 2px solid white;
+    flex: 1;
+    color: white;
+}
+
+.question-user-info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.question-user-info-date {
+    text-align: right;
+}
+
+.question-detail-offers {
+    background-color: white;
+}

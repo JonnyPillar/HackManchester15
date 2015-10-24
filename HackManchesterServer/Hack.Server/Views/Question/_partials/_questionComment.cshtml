@@ -1,10 +1,10 @@
 ﻿@model Hack.Server.Controllers.CommentItem
 
-<div class="question-comment">
+<div data-id="@Model.Id" class="question-comment">
     <div class="question-comment-text"> 
-
+        @Model.Content
     </div>
     <div class="question-comment-datetime">
-        
+        @Model.Timestamp
     </div>
 </div>

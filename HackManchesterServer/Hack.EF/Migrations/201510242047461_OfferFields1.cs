@@ -14,7 +14,7 @@ namespace Hack.EF.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.Offer", "SubmittedByUserId", "dbo.User");
-            AddForeignKey("dbo.Offer", "SubmittedByUserId", "dbo.User", "Id", cascadeDelete: true);
+            AddForeignKey("dbo.Offer", "SubmittedByUserId", "dbo.User", "Id", cascadeDelete: false);
         }
     }
 }

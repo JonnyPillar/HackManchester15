@@ -189,11 +189,23 @@ textarea {
 
 .question-comment-text {
     flex: 1;
+    font-size: 30px;
+    color: #656565 ;
+    font-family: Roboto
 }
 
 .question-comment-datetime {
     flex: 1;
     text-align: right;
+    color: #bdbdbd ;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.question-comment-answer-title {
+    font-size: 28px;
+    font-weight: 500;
 }
 
 .question-comment-profile-image{
@@ -202,9 +214,17 @@ textarea {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    background-color: red;
+    background-color: #1cbbb4 ;
     margin: 10px;
 }
+
+.question-comment-answer-content {
+    color: #656565 ;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+}
+
 
 .question-comment-select-icon {
     width: 50px;

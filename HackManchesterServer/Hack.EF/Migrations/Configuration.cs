@@ -37,10 +37,10 @@ namespace Hack.EF.Migrations
             var questionTags = new List<QuestionTag>
             {
                 new QuestionTag(1, "Education",
-                    "https://www.dropbox.com/s/wsgdu8toco7vvmx/educational_thumbnail.png?dl=0"),
+                    "http://jonnypillar.co.uk/educational_thumbnail.png+"),
                 new QuestionTag(2, "Electrical",
-                    "https://www.dropbox.com/s/kuxc6so0rvaf6py/electrical_thumbnail.png?dl=0"),
-                new QuestionTag(3, "Nature", "https://www.dropbox.com/s/jgairrq4djq34ne/nature_thumbnail.png?dl=0"),
+                    "http://jonnypillar.co.uk/electrical_thumbnail.png"),
+                new QuestionTag(3, "Nature", "http://jonnypillar.co.uk/nature_thumbnail.png"),
                 new QuestionTag(4, "Computers"),
                 new QuestionTag(5, "Shower"),
                 new QuestionTag(6, "Lights"),

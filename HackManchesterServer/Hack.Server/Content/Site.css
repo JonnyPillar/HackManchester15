@@ -1,14 +1,4 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+﻿
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -23,37 +13,42 @@ textarea {
 
 .home {
     background-color: #eee;
+    padding: 8px 17px
 }
 
 .home-question {
     display: flex;
     flex-direction: row;
     flex: 1;
-    margin: 17px 34px;
-    height: 450px;
+    margin: 8px 0;
+    height: 225px;
 }
 
 .home-question img {
-    width: 450px;
-    height: 450px;
+    width: 225px;
+    height: 225px;
 }
 
 .home-question-details {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    flex: 1;
 }
 
 .home-question-title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 500;
     color: #414141;
     flex: 1;
+    padding: 10px;
 }
 
 .home-question-description {
     color: #757575;
-    font-size: 30px;
+    font-size: 20px;
     flex: 1;
+    padding: 10px;
     font-weight: 400;
 }
 
@@ -61,4 +56,5 @@ textarea {
     color: #757575;
     background-color: #b7b6b6;
     margin: 10px;   
+    padding: 10px;
 }

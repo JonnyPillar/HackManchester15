@@ -30,12 +30,12 @@ textarea {
     flex-direction: row;
     flex: 1;
     margin: 17px 34px;
-    height: 450px;
+    height: 225px;
 }
 
 .home-question img {
-    width: 450px;
-    height: 450px;
+    width: 225px;
+    height: 225px;
 }
 
 .home-question-details {

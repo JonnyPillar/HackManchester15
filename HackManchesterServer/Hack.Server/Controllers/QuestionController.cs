@@ -17,12 +17,21 @@ namespace Hack.Server.Controllers
         {
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(DetailsModel model)
         {
             var question =
-                HackDbContext.Questions.Where(x => x.Id == id).Include(x => x.Offers).Include(x => x.User).First();
+                HackDbContext.Questions.Where(x => x.Id == model.Id)
+                .Include(x => x.Offers)
+                .Include(x => x.User)
+                .First();
             return View(new QuestionDetailViewModel(question));
         }
+    }
+
+    public class DetailsModel
+    {
+        public long Id { get; set; }
+        public string Token { get; set; }
     }
 
     public class QuestionDetailViewModel

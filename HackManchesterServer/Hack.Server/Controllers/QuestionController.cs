@@ -23,6 +23,7 @@ namespace Hack.Server.Controllers
                 HackDbContext.Questions.Where(x => x.Id == model.Id)
                 .Include(x => x.Offers)
                 .Include(x => x.User)
+                .Include(x => x.Offers.Select(y => y.SubmittedByUser))
                 .First();
             return View(new QuestionDetailViewModel(question));
         }

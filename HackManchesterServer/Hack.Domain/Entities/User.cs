@@ -31,5 +31,10 @@ namespace Hack.Domain.Entities
             Token = Guid.NewGuid().ToString("N");
             return Token;
         }
+
+        public string FullName()
+        {
+            return Forename + " " + Surname;
+        }
     }
 }

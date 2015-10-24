@@ -27,6 +27,8 @@ namespace Hack.Domain.Entities
             QuestionForId = questionForId;
         }
 
+     
+
         public string Text { get; set; }
         public DateTime OfferDateTime { get; set; }
         public bool VideoCallAvailable { get; set; }

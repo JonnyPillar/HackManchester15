@@ -1,10 +1,28 @@
 ﻿@model Hack.Server.Controllers.CommentItem
 
-<div data-id="@Model.Id" class="question-comment">
-    <div class="question-comment-text"> 
-        @Model.Content
+<div data-id="@Model.Id" class="question-offer">
+    <div class="question-comment-profile-image">
+        <img/>
     </div>
-    <div class="question-comment-datetime">
-        @Model.Timestamp
+    <div class="question-offer-content">
+        <div class="question-offer-content-header">
+            <div class="question-comment-text">
+                @Model.UserNameString
+            </div>
+            <div class="question-comment-datetime">
+                @Model.Timestamp
+            </div>
+        </div>
+        <div class="question-offer-content-description">
+            <div class="question-comment-answer-title">
+                Answer
+            </div>
+            <div class="question-comment-answer-content">
+                @Model.Content
+            </div>
+        </div>
+    </div>
+    <div class="question-comment-select-icon">
+        L
     </div>
 </div>

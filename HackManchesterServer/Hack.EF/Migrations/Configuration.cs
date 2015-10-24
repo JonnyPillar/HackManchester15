@@ -28,8 +28,15 @@ namespace Hack.EF.Migrations
 
         private static void SeedUsers(HackDbContext context)
         {
-            var user = new User(1, "TestUser", "Password123", "Test", "User");
-            context.Users.AddOrUpdate(n => n.Username, user);
+            var users = new List<User>()
+            {
+                new User(1, "JonnyP", "Password123", "Jonny", "Pillar"),
+                new User(2, "StuartC", "Password123", "Stuart", "Campbell"),
+                new User(3, "JigzL", "Password123", "Jigz", "Lad"),
+                new User(4, "EmmaS", "Password123", "Emma", "Smith")
+            };
+
+            users.ForEach(q => context.Users.AddOrUpdate(x => x.Username, q));
             context.SaveChanges();
         }
 
@@ -38,7 +45,7 @@ namespace Hack.EF.Migrations
             var questionTags = new List<QuestionTag>
             {
                 new QuestionTag(1, "Education",
-                    "http://jonnypillar.co.uk/educational_thumbnail.png+"),
+                    "http://jonnypillar.co.uk/educational_thumbnail.png"),
                 new QuestionTag(2, "Electrical",
                     "http://jonnypillar.co.uk/electrical_thumbnail.png"),
                 new QuestionTag(3, "Nature", "http://jonnypillar.co.uk/nature_thumbnail.png"),
@@ -99,9 +106,9 @@ namespace Hack.EF.Migrations
         {
             var offers = new List<Offer>()
             {
-                new Offer(1, "I can help I know about spiders, video call and show me", DateTime.UtcNow, true, 1, 1),
-                new Offer(2, "I think I can help here", DateTime.UtcNow, false, 1, 1),
-                new Offer(3, "Send a photo and I can identify", DateTime.UtcNow, false, 1, 1)
+                new Offer(1, "I can help I know about spiders, video call and show me", DateTime.UtcNow, true, 2, 1),
+                new Offer(2, "I think I can help here", DateTime.UtcNow, false, 3, 1),
+                new Offer(3, "Send a photo and I can identify", DateTime.UtcNow, false, 4, 1)
             };
 
             offers.ForEach(q => context.Offers.AddOrUpdate(x => x.Id, q));

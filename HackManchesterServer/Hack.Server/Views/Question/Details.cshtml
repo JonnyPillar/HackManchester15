@@ -1,13 +1,33 @@
 ﻿@model Hack.Server.Controllers.QuestionDetailViewModel
 
 <div class="question-detail">
-    <div>
-        @Model.Title
+    <div class="question-detail-panel">
+        <div class="question-detail-question">
+            Question
+        </div>
+        <div class="question-detail-title">
+            @Model.Title
+        </div>
+        <div class="question-detail-description-title">
+
+        </div>
+        <div class="question-detail-description">
+            Description
+        </div>
+        <div class="question-detail-description">
+        <div class="question-detail-description">
+            @Model.Description
+        </div>
+        <div class="question-user-info">
+            <div class="question-user-info-username">
+                @Model.UserName
+            </div>
+            <div class="question-user-info-date">
+                @Model.DateTimeString
+            </div>
+        </div>
     </div>
-    <div>
-        @Model.Description
-    </div>
-    <div>
+    <div class="question-detail-offers">
         @foreach (var comment in Model.Comments)
         {
             @Html.Partial("_partials/_questionComment", comment)

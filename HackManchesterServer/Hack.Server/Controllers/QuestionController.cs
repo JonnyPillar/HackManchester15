@@ -18,30 +18,38 @@ namespace Hack.Server.Controllers
 
         public ActionResult Details(int id)
         {
-            var question = HackDbContext.QuestionTags.First(x => x.Id == id);
+            var question = HackDbContext.Questions.First(x => x.Id == id);
             return View(new QuestionDetailViewModel(question));
         }
     }
 
     public class QuestionDetailViewModel
     {
-        public QuestionDetailViewModel(QuestionTag question)
+        public QuestionDetailViewModel(Question question)
         {
-            
+            Comments = question.Offers.Select(x => new CommentItem(x)).ToList();
         }
 
         public string Title { get; set; }
         public string Description { get; set; }
         public List<CommentItem> Comments { get; set; }
+        public string DateTimeString { get; set; }
+        public string UserName { get; set; }
     }
 
     public class CommentItem
     {
-        public CommentItem()
+        public CommentItem(Offer offer)
         {
+            Id = offer.Id;
+            Content = offer.Text;
+            Timestamp = offer.OfferDateTime;
+            VideoCallAvailable = offer.VideoCallAvailable;
         }
 
-        public int Id { get; set; }
+        public bool VideoCallAvailable { get; set; }
+
+        public long Id { get; set; }
         public string Content { get; set; }
         public DateTime Timestamp { get; set; }
     }

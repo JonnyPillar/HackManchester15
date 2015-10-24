@@ -16,9 +16,9 @@ var envify = require('envify');
 var del = require('del');
 
 var scriptsDir = './Scripts/Application';
-var releaseDir = './Scripts/release';
+var releaseDir = './Scripts/deploy';
 var entryPoints = [scriptsDir + '/Application.jsx'];
-var releaseBundleFileName = 'bundlasdasde.js';
+var releaseBundleFileName = 'bundle.js';
 
 var jsLintDir = scriptsDir + '/**/*.js';
 var jsxLintDir = scriptsDir + '/**/*.jsx';

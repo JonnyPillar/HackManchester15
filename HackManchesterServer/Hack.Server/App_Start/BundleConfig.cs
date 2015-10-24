@@ -1,5 +1,4 @@
 ﻿using System.Web.Optimization;
-using System.Web.Optimization.React;
 
 namespace Hack.Server
 {
@@ -27,7 +26,7 @@ namespace Hack.Server
                 "~/Content/site.css"));
 
 
-            bundles.Add(new BabelBundle("~/bundles/main").Include("~/Content/HelloWorld.react.jsx"));
+            //bundles.Add(new BabelBundle("~/bundles/main").Include("~/Content/HelloWorld.react.jsx"));
         }
     }
 }

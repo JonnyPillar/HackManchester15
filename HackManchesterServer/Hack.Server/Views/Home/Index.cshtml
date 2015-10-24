@@ -8,9 +8,9 @@
 </div>
 
 <script>
-    $(document).ready(function() {
-        $('.home-question').click(function() {
-            var questionId = $(this).attr('data-id');
+    jQuery(document).ready(function () {
+        jQuery('.home-question').click(function() {
+            var questionId = jQuery(this).attr('data-id');
             nativeListener.performClick(questionId);
             alert('sdfhsdkjfhds: '+ questionId);
         });

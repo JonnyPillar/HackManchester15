@@ -6,11 +6,11 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="https://fb.me/react-0.14.0.min.js"></script>
-    <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+    @*<script src="https://fb.me/react-0.14.0.min.js"></script>*@
+    @*<script src="https://fb.me/react-dom-0.14.0.min.js"></script>*@
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,13 +27,9 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
     <script src="~/Scripts/deploy/bundle.js"></script>
 

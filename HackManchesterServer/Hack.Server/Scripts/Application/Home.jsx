@@ -1,4 +1,7 @@
-var CheckLink = React.createClass({
+var react = require('react');
+var ReactDOM = require('react-dom');
+
+var CheckLink = react.createElement({
     render: function() {
         // This takes any props passed to CheckLink and copies them to <a>
 
@@ -20,7 +23,7 @@ var CheckLink = React.createClass({
 });
 
 module.exports = function(){
-    return (ReactDOM.render(
-        CheckLink, document.getElementById('homePanel')
+        return (ReactDOM.render(
+        CheckLink, document.getElementById('example')
     ));
 };

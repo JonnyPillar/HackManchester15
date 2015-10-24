@@ -1,9 +1,17 @@
-﻿
-@model List<Hack.Server.Controllers.HomeQuestionViewModel>
+﻿@model List<Hack.Server.Controllers.HomeQuestionViewModel>
 
-<div id="homePanel"></div>
+<div class="home">
+    @foreach (var question in Model)
+    {
+        @Html.Partial("_partial/_question", question)
+    }
+</div>
 
 <script>
-    var questions = [1, 2, 3];
-    //var questions = @Model;
+    $(document).ready(function() {
+        $('.home-question').click(function() {
+            var questionId = $(this).attr('data-id');
+
+        });
+    });
 </script>

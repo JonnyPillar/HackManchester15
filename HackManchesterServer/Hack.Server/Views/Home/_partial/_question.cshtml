@@ -1,5 +1,21 @@
 ﻿@model Hack.Server.Controllers.HomeQuestionViewModel
 
-<div class="home-question">
-    <img />
+<div class="home-question" data-id="@Model.Id">
+    <img src="@Model.ImageUrl" />
+    <div class="home-question-details">
+        <div class="home-question-title">
+            @Model.Title
+        </div>
+        <div class="home-question-description">
+            @Model.Description
+        </div>
+        <div class="home-question-tags">
+            @foreach (var tag in Model.Tags)
+            {
+                <div class="home-tag-item">
+                    @tag.Title
+                </div>
+            }
+        </div>
+    </div>
 </div>

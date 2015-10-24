@@ -15,3 +15,50 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*
+    Home
+*/
+
+.home {
+    background-color: #eee;
+}
+
+.home-question {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 17px 34px;
+    height: 450px;
+}
+
+.home-question img {
+    width: 450px;
+    height: 450px;
+}
+
+.home-question-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-question-title {
+    font-size: 50px;
+    font-weight: 500;
+    color: #414141;
+    flex: 1;
+}
+
+.home-question-description {
+    color: #757575;
+    font-size: 30px;
+    flex: 1;
+    font-weight: 400;
+}
+
+.home-tag-item {
+    color: #757575;
+    background-color: #b7b6b6;
+    margin: 10px;
+}

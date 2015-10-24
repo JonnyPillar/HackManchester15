@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
+using System.Net.NetworkInformation;
 using Hack.Domain.Entities;
 
 namespace Hack.EF.Migrations
@@ -26,6 +28,12 @@ namespace Hack.EF.Migrations
             var user = new User("TestUser", "Password123", "Test", "User");
             context.Users.AddOrUpdate(n => n.Username, user);
             context.SaveChanges();
+        }
+
+        private static void SeedQuestionTags()
+        {
+            var questionTags = new List<QuestionTag>();
+
         }
     }
 }

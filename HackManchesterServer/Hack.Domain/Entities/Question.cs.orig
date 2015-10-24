@@ -5,11 +5,17 @@ namespace Hack.Domain.Entities
 {
     public class Question : BaseEntity
     {
+<<<<<<< HEAD
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime QuestionUploadedDateTime { get; set; }
         public User User { get; set; }
         public long UserId { get; set; }
         public virtual ICollection<QuestionTag> QuestionTags { get; set; }
+=======
+        public Question()
+        {
+        }
+>>>>>>> refs/remotes/origin/master
     }
 }

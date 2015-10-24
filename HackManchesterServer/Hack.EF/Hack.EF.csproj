@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HackDbContext.cs" />
+    <Compile Include="Mappings\BaseEntityMap.cs" />
+    <Compile Include="Mappings\EndorsementMap.cs" />
+    <Compile Include="Mappings\OfferMap.cs" />
+    <Compile Include="Mappings\QuestionMap.cs" />
+    <Compile Include="Mappings\QuestionTagMap.cs" />
+    <Compile Include="Mappings\UserMap.cs" />
     <Compile Include="Migrations\201510241238492_InitialCommit.cs" />
     <Compile Include="Migrations\201510241238492_InitialCommit.Designer.cs">
       <DependentUpon>201510241238492_InitialCommit.cs</DependentUpon>
@@ -56,6 +62,10 @@
     <Compile Include="Migrations\201510241435552_EmptyEntities.cs" />
     <Compile Include="Migrations\201510241435552_EmptyEntities.Designer.cs">
       <DependentUpon>201510241435552_EmptyEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.cs" />
+    <Compile Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.Designer.cs">
+      <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510241435552_EmptyEntities.resx">
       <DependentUpon>201510241435552_EmptyEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.resx">
+      <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

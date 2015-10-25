@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 
 namespace Hack.Domain.Entities
 {
@@ -24,6 +25,8 @@ namespace Hack.Domain.Entities
             Title = title;
             Description = description;
             QuestionTags = questionTags;
+            QuestionUploadedDateTime = questionUploadedDateTime;
+            UserId = userId;
         }
 
         public string Title { get; set; }

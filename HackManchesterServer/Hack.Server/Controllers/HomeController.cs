@@ -21,7 +21,7 @@ namespace Hack.Server.Controllers
 
         public ActionResult Index(long id = 0)
         {
-            var questions = HackDbContext.Questions.ToList().OrderBy(x => x.QuestionUploadedDateTime);
+            var questions = HackDbContext.Questions.ToList().OrderByDescending(x => x.QuestionUploadedDateTime);
             return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         }
 

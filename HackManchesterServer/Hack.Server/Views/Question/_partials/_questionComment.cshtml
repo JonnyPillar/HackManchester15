@@ -1,7 +1,7 @@
 ﻿@model Hack.Server.Controllers.CommentItem
 
 <div data-id="@Model.Id" class="question-offer">
-    <div class="question-comment-profile-image">
+    <div class="question-comment-profile-image" data-id="@Model.UserId">
         <img src="@Model.ProfileUrl" />
     </div>
     <div class="question-offer-content">

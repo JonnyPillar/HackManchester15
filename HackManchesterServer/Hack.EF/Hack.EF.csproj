@@ -55,37 +55,9 @@
     <Compile Include="Mappings\QuestionMap.cs" />
     <Compile Include="Mappings\QuestionTagMap.cs" />
     <Compile Include="Mappings\UserMap.cs" />
-    <Compile Include="Migrations\201510241238492_InitialCommit.cs" />
-    <Compile Include="Migrations\201510241238492_InitialCommit.Designer.cs">
-      <DependentUpon>201510241238492_InitialCommit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510241435552_EmptyEntities.cs" />
-    <Compile Include="Migrations\201510241435552_EmptyEntities.Designer.cs">
-      <DependentUpon>201510241435552_EmptyEntities.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.cs" />
-    <Compile Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.Designer.cs">
-      <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510242040049_OfferFields.cs" />
-    <Compile Include="Migrations\201510242040049_OfferFields.Designer.cs">
-      <DependentUpon>201510242040049_OfferFields.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510242047461_OfferFields1.cs" />
-    <Compile Include="Migrations\201510242047461_OfferFields1.Designer.cs">
-      <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510250137173_Added extra fuekds.cs" />
-    <Compile Include="Migrations\201510250137173_Added extra fuekds.Designer.cs">
-      <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510250243573_Added data to endosrments.cs" />
-    <Compile Include="Migrations\201510250243573_Added data to endosrments.Designer.cs">
-      <DependentUpon>201510250243573_Added data to endosrments.cs</DependentUpon>
-      </Compile>
-    <Compile Include="Migrations\201510250249382_BoolForQuestion.cs" />
-    <Compile Include="Migrations\201510250249382_BoolForQuestion.Designer.cs">
-      <DependentUpon>201510250249382_BoolForQuestion.cs</DependentUpon>
+    <Compile Include="Migrations\201510250344595_aohaoifsd.cs" />
+    <Compile Include="Migrations\201510250344595_aohaoifsd.Designer.cs">
+      <DependentUpon>201510250344595_aohaoifsd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,29 +73,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510241238492_InitialCommit.resx">
-      <DependentUpon>201510241238492_InitialCommit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510241435552_EmptyEntities.resx">
-      <DependentUpon>201510241435552_EmptyEntities.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510241803528_FieldsForQuestionAndQuestionTag.resx">
-      <DependentUpon>201510241803528_FieldsForQuestionAndQuestionTag.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510242040049_OfferFields.resx">
-      <DependentUpon>201510242040049_OfferFields.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510242047461_OfferFields1.resx">
-      <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510250137173_Added extra fuekds.resx">
-      <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510250243573_Added data to endosrments.resx">
-      <DependentUpon>201510250243573_Added data to endosrments.cs</DependentUpon>
-      </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510250249382_BoolForQuestion.resx">
-      <DependentUpon>201510250249382_BoolForQuestion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510250344595_aohaoifsd.resx">
+      <DependentUpon>201510250344595_aohaoifsd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

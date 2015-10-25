@@ -7,13 +7,13 @@ namespace Hack.EF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class FieldsForQuestionAndQuestionTag : IMigrationMetadata
+    public sealed partial class aohaoifsd : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(FieldsForQuestionAndQuestionTag));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(aohaoifsd));
         
         string IMigrationMetadata.Id
         {
-            get { return "201510241803528_FieldsForQuestionAndQuestionTag"; }
+            get { return "201510250344595_aohaoifsd"; }
         }
         
         string IMigrationMetadata.Source

@@ -28,14 +28,14 @@ namespace Hack.Server.Controllers
         public ActionResult Asked(AskedRequesModel model)
         {
             var user = HackDbContext.Users.First(x => x.Token == model.Token);
-            var questions = HackDbContext.Questions.Where(x => x.UserId == user.Id).ToList().OrderBy(x => x.QuestionUploadedDateTime);
+            var questions = HackDbContext.Questions.Where(x => x.UserId == user.Id).ToList().OrderByDescending(x => x.QuestionUploadedDateTime);
             return View("Index", questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         }
 
         public ActionResult Answered(AnsweredRequesModel model)
         {
             var user = HackDbContext.Users.First(x => x.Token == model.Token);
-            var questions = HackDbContext.Questions.Where(x => x.Offers.Any(y => y.SubmittedByUserId == user.Id)).ToList().OrderBy(x => x.QuestionUploadedDateTime);
+            var questions = HackDbContext.Questions.Where(x => x.Offers.Any(y => y.SubmittedByUserId == user.Id)).ToList().OrderByDescending(x => x.QuestionUploadedDateTime);
             return View("Index", questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         } 
     }
@@ -56,7 +56,7 @@ namespace Hack.Server.Controllers
         {
             Id = question.Id;
             Title = question.Title.Length > 39 ? question.Title.Substring(0, 40) + "..." : question.Title;
-            Description = question.Description.Length > 124 ? question.Description.Substring(0, 124) + "..." : question.Description;
+            Description = question.Description.Length > 115 ? question.Description.Substring(0, 124) + "..." : question.Description;
             if (question.QuestionTags.Count >= 1)
             {
                 ImageUrl = question.QuestionTags.First().ImageUrl;

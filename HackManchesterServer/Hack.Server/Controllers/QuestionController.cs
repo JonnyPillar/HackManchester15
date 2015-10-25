@@ -91,7 +91,7 @@ namespace Hack.Server.Controllers
         public static string DateTimeGenerator(DateTime dateTime)
         {
             var elapsedTimeSpan = DateTime.Now - dateTime;
-            if (elapsedTimeSpan.Minutes > 60)
+            if (elapsedTimeSpan.Hours >= 1)
             {
                 return elapsedTimeSpan.Hours + " Hours Ago";
             }

@@ -363,12 +363,12 @@ textarea {
 }
 
 .profile-image-circle {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     -webkit-border-radius: 25px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    margin-bottom: 30px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+    margin-bottom: 70px;
 }
 
 .endorse-title {

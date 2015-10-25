@@ -43,7 +43,42 @@ namespace Hack.Server.ApiControllers
             HackDbContext.Questions.Add(question);
             HackDbContext.SaveChanges();
 
+            return Ok(new SubmitQuestionResponse(question.Id));
+        }
+
+        [CustomAuthorise]
+        [HttpPost]
+        [Route("api/Questions/Enter/{id:long}")]
+        public IHttpActionResult EnterQuestion(long id)
+        {
+
             return Ok();
         }
+
+        [CustomAuthorise]
+        [HttpPost]
+        [Route("api/Questions/Poll/{id:long}")]
+        public IHttpActionResult PollQuestion(long id)
+        {
+            return Ok();
+        }
+
+        [CustomAuthorise]
+        [HttpPost]
+        [Route("api/Questions/Leave/{id:long}")]
+        public IHttpActionResult LeaveQuestion(long id)
+        {
+            return Ok();
+        }
+    }
+
+    public class SubmitQuestionResponse
+    {
+        public SubmitQuestionResponse(long questionId)
+        {
+            QuestionId = questionId;
+        }
+
+        public long QuestionId { get; set; }
     }
 }

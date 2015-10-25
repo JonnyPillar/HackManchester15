@@ -273,6 +273,7 @@
     <Content Include="Views\Question\Details.cshtml" />
     <Content Include="Views\Question\_partials\_questionComment.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Profile\_partials\_endorsements.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hack.Domain\Hack.Domain.csproj">

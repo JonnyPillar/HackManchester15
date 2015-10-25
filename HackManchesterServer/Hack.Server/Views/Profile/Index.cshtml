@@ -1,18 +1,28 @@
 ﻿@model Hack.Server.Controllers.ProjectIndexViewModel
 
 <div class="profile">
-    <div class="profile-image">
-        <div class="profile-image-circle">
-            <img src="@Model.ProfileImage"/>
+    <div class="profile-header">
+        <div class="profile-image">
+            <div class="profile-image-circle">
+                <img src="@Model.ProfileImage" />
+            </div>
+        </div>
+        <div class="profile-title">
+            @Model.Name
+        </div>
+        <div class="profile-bio">
+            @Model.Bio
         </div>
     </div>
-    <div class="profile-title">
-        @Model.Name
-    </div>
-    <div class="profile-bio">
-        @Model.Bio
-    </div>
-    <div>
-        
+    <div class="endorse-section">
+        <div class="endorse-title">
+            My Endorsements
+        </div>
+        <div class="profile-endorements">
+            @foreach (var ensorment in Model.Endorsements)
+            {
+                @Html.Partial("_partials/_endorsements", ensorment)
+            }
+        </div>
     </div>
 </div>

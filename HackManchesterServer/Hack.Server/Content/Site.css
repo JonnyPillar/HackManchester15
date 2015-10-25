@@ -283,3 +283,120 @@ textarea {
     justify-content: center;
     align-content: center;
 }
+
+/*
+    Profile
+*/
+
+.profile {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.profile-header {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    border-bottom: 4px solid #bdbdbd;
+    padding-bottom: 40px;
+}
+
+.profile-image {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-title {
+    color: #414141 ;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.profile-bio {
+    color: #757575 ;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 30px 100px 0;
+}
+
+.endorse-title {
+    color: #757575 ;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 4px solid #bdbdbd;
+}
+
+.profile-image-circle {
+    background-color: #42a5f5;
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.endorse-title {
+    margin: 0 25px;
+    font-size: 20px;
+}
+/*
+    Endorsement
+*/
+
+.endorse-section{
+    background-color: #eee;
+    padding: 10px;
+}
+
+.profile-endorements {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.endorsement {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: white;
+    margin: 15px 10px;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #414141;
+    font-family: Roboto;
+    width: 130px;
+    height: 80px;
+    text-align: center;
+}
+
+.endorsement-name {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-weight: 400;
+    font-size: 25px;
+    background-color: white;
+    padding-left: 20px;
+    color: #757575;
+}
+

@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201510250137173_Added extra fuekds.Designer.cs">
       <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510250243573_Added data to endosrments.cs" />
+    <Compile Include="Migrations\201510250243573_Added data to endosrments.Designer.cs">
+      <DependentUpon>201510250243573_Added data to endosrments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510250137173_Added extra fuekds.resx">
       <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510250243573_Added data to endosrments.resx">
+      <DependentUpon>201510250243573_Added data to endosrments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

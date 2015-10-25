@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using System.Web.Mvc;
 using Hack.Domain.Entities;
 using Hack.Domain.Interfaces;
@@ -22,7 +24,7 @@ namespace Hack.Server.Controllers
 
         public ActionResult Detail(int id)
         {
-            var user = HackDbContext.Users.First(x => x.Id == id);
+            var user = HackDbContext.Users.Where(x => x.Id == id).Include(x => x.Endorsements).First(x => x.Id == id);
             return View("Index", new ProjectIndexViewModel(user));
         }
     }
@@ -35,15 +37,26 @@ namespace Hack.Server.Controllers
             Name = user.FullName();
             Bio = user.Bio;
             ProfileImage = user.ProfileImageUrl;
+            Endorsements = user.Endorsements.Select(x => new EndorsementItem(x)).ToList();
         }
 
         public string ProfileImage { get; set; }
-
         public string Name { get; set; }
-
         public string Bio { get; set; }
-
         public long Id { get; set; }
+        public List<EndorsementItem> Endorsements { get; set; }
+    }
+
+    public class EndorsementItem
+    {
+        public EndorsementItem(Endorsement endorsement)
+        {
+            Name = endorsement.Tag.Tag;
+            Count = endorsement.Count;
+        }
+
+        public int Count { get; set; }
+        public string Name { get; set; }
     }
 
     public class ProjectIndexRequestModel

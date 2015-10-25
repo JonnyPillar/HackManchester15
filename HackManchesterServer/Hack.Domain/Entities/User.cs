@@ -27,6 +27,7 @@ namespace Hack.Domain.Entities
         public virtual ICollection<Offer> Offers { get; set; }
         public string Bio { get; set; }
         public string ProfileImageUrl { get; set; }
+        public List<Endorsement> Endorsements { get; set; }
 
         public string GenerateToken()
         {

@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201510242047461_OfferFields1.Designer.cs">
       <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510250137173_Added extra fuekds.cs" />
+    <Compile Include="Migrations\201510250137173_Added extra fuekds.Designer.cs">
+      <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510242047461_OfferFields1.resx">
       <DependentUpon>201510242047461_OfferFields1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510250137173_Added extra fuekds.resx">
+      <DependentUpon>201510250137173_Added extra fuekds.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

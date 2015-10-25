@@ -309,8 +309,15 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    
 }
-
+.profile-image img {
+    width: 140px;
+    height: 140px;
+     -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    border-radius: 70px;
+}
 .profile-title {
     color: #414141 ;
     font-family: Roboto;
@@ -337,7 +344,6 @@ textarea {
 }
 
 .profile-image-circle {
-    background-color: #42a5f5;
     height: 100px;
     width: 100px;
     -webkit-border-radius: 25px;

@@ -29,22 +29,20 @@ namespace Hack.EF.Migrations
 
         private void SeedEndorsements(HackDbContext context)
         {
-
-
-            context.Endorsements.AddOrUpdate( new Endorsement
-                {
-                    Id = 1,
-                    Count = 10,
-                    UserId = 1,
-                    TagId = 1
-                });
-            context.Endorsements.AddOrUpdate( new Endorsement
-                {
-                    Id = 2,
-                    Count = 10,
-                    UserId = 1,
-                    TagId = 2
-                });
+            context.Endorsements.AddOrUpdate(new Endorsement
+            {
+                Id = 1,
+                Count = 10,
+                UserId = 1,
+                TagId = 1
+            });
+            context.Endorsements.AddOrUpdate(new Endorsement
+            {
+                Id = 2,
+                Count = 10,
+                UserId = 1,
+                TagId = 2
+            });
 
             context.SaveChanges();
         }
@@ -55,17 +53,32 @@ namespace Hack.EF.Migrations
             {
                 new User(1, "JonnyP", "Password123", "Jonny", "Pillar")
                 {
-                    Bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                    Bio =
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                    ,
+                    ProfileImageUrl = "http://api.randomuser.me/portraits/women/39.jpg"
                 },
-                new User(2, "StuartC", "Password123", "Stuart", "Campbell"){
-                    Bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                new User(2, "StuartC", "Password123", "Stuart", "Campbell")
+                {
+                    Bio =
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                    ,
+                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/women/40.jpg"
                 },
-                new User(3, "JigzL", "Password123", "Jigz", "Lad"){
-                    Bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                new User(3, "JigzL", "Password123", "Jigz", "Lad")
+                {
+                    Bio =
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                    ,
+                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/men/67.jpg"
                 },
-                new User(4, "EmmaS", "Password123", "Emma", "Smith"){
-                    Bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
-                },
+                new User(4, "EmmaS", "Password123", "Emma", "Smith")
+                {
+                    Bio =
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                    ,
+                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/men/7.jpg"
+                }
             };
 
             users.ForEach(q => context.Users.AddOrUpdate(x => x.Username, q));

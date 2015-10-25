@@ -56,28 +56,28 @@ namespace Hack.EF.Migrations
                     Bio =
                         "Hi, I am Jonny. My interests include cycling, running and exploring. This means I can offer help with bikes or the countryside. I am a big fan of walks, especially in the North of England."
                     ,
-                    ProfileImageUrl = "http://imgur.com/R8H8F7k"
+                    ProfileImageUrl = "http://i.imgur.com/R8H8F7k.jpg"
                 },
                 new User(2, "StuartC", "Password123", "Stuart", "Campbell")
                 {
                     Bio =
                         "I am from Scotland but now live in the North of England. I was a gymnast when I was younger. My interests include crossfit and computers. I can help with general computer problems. I also have a degree in Economics. "
                     ,
-                    ProfileImageUrl = "http://imgur.com/E21NnY3"
+                    ProfileImageUrl = "http://i.imgur.com/E21NnY3.jpg"
                 },
                 new User(3, "JigzL", "Password123", "Jigz", "Lad")
                 {
                     Bio =
                         "Jignesh from Manchester. I am a designer for mobile apps and websites. I am a follower of Hinduism. I enjoy cooking, especially Mexican and Italian food."
                     ,
-                    ProfileImageUrl = "http://imgur.com/3VuVmUz"
+                    ProfileImageUrl = "http://i.imgur.com/3VuVmUz.jpg"
                 },
                 new User(4, "EmmaS", "Password123", "Emma", "Smith")
                 {
                     Bio =
                         "I am Emma. I am from the South of Englan but now live in the North. I enjoy running and crossfit. I went to uni studying Computing."
                     ,
-                    ProfileImageUrl = "http://imgur.com/qXSCuDC"
+                    ProfileImageUrl = "http://i.imgur.com/qXSCuDC.jpg"
                 }
             };
 

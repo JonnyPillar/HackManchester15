@@ -48,7 +48,9 @@
     <Compile Include="DataContracts\ApiRequests\SubmitQuestionRequest.cs" />
     <Compile Include="DataContracts\ApiResponses\GetOffersForQuestionResponse.cs" />
     <Compile Include="DataContracts\ApiResponses\LoginResponse.cs" />
+    <Compile Include="DataContracts\ApiResponses\PollResponse.cs" />
     <Compile Include="DataContracts\ApiResponses\QuestionTagsResponse.cs" />
+    <Compile Include="DataContracts\ApiResponses\SubmitQuestionResponse.cs" />
     <Compile Include="DataContracts\ApplicationUser.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Endorsement.cs" />

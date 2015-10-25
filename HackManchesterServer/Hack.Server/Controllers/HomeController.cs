@@ -62,7 +62,10 @@ namespace Hack.Server.Controllers
                 ImageUrl = question.QuestionTags.First().ImageUrl;
             }
             Tags = question.QuestionTags.Select(x => new TagItem(x)).ToList();
+            Timestamp = DateHelper.DateTimeGenerator(question.QuestionUploadedDateTime);
         }
+
+        public string Timestamp { get; set; }
 
         public HomeQuestionViewModel()
         {

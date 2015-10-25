@@ -47,6 +47,8 @@ namespace Hack.Server.Controllers
             Comments = question.Offers.Select(x => new CommentItem(x)).ToList();
         }
 
+        public string ProfileUrl { get; set; }
+
         public string UserNameString { get; set; }
 
         public string Title { get; set; }
@@ -67,7 +69,10 @@ namespace Hack.Server.Controllers
             VideoCallAvailable = offer.VideoCallAvailable;
             Timestamp = DateHelper.DateTimeGenerator(offer.OfferDateTime);
             UserNameString = offer.SubmittedByUser.FullName();
+            ProfileUrl = offer.SubmittedByUser.ProfileImageUrl;
         }
+
+        public string ProfileUrl { get; set; }
 
         public bool VideoCallAvailable { get; set; }
         public long Id { get; set; }

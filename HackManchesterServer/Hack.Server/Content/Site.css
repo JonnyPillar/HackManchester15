@@ -217,6 +217,13 @@ textarea {
     background-color: #1cbbb4 ;
     margin: 10px;
 }
+.question-comment-profile-image img{
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
 
 .question-comment-answer-content {
     color: #656565 ;

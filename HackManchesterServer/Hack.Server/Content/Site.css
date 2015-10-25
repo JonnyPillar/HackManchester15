@@ -36,7 +36,7 @@ textarea {
 }
 
 .home-question-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     color: #414141;
     flex: 1;
@@ -227,5 +227,10 @@ textarea {
 
 
 .question-comment-select-icon {
+    margin-left: 20px;
     width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }

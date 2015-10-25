@@ -18,13 +18,13 @@ namespace Hack.Server.Controllers
         // GET: Profile
         public ActionResult Index(ProjectIndexRequestModel model)
         {
-            var user = HackDbContext.Users.First(x => x.Token == model.Token);
+            var user = HackDbContext.Users.Where(x => x.Token == model.Token).Include(x => x.Endorsements).First();
             return View(new ProjectIndexViewModel(user));
         }
 
         public ActionResult Detail(int id)
         {
-            var user = HackDbContext.Users.Where(x => x.Id == id).Include(x => x.Endorsements).First(x => x.Id == id);
+            var user = HackDbContext.Users.Where(x => x.Id == id).Include(x => x.Endorsements).First();
             return View("Index", new ProjectIndexViewModel(user));
         }
     }

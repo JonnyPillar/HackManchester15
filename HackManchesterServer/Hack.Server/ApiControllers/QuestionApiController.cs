@@ -77,7 +77,7 @@ namespace Hack.Server.ApiControllers
             foreach (var question in questions)
             {
                 response.Add(new PollQuestion(question.Id, question.Title, question.Description));
-                //question.PeopleEnteredInQuestion = false;
+                question.PeopleEnteredInQuestion = false;
             }
             HackDbContext.SaveChanges();
 

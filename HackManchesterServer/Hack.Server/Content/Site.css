@@ -33,6 +33,7 @@ textarea {
     flex-direction: column;
     background-color: white;
     flex: 1;
+    padding: 20px 20px 10px 20px; 
 }
 
 .home-question-title {
@@ -40,14 +41,14 @@ textarea {
     font-weight: 500;
     color: #414141;
     flex: 1;
-    padding: 10px;
+    text-transform: uppercase;
+    line-height: 30px;
 }
 
 .home-question-description {
     color: #757575;
-    font-size: 20px;
+    font-size: 15px;
     flex: 1;
-    padding: 10px;
     font-weight: 400;
     overflow: hidden;
 }
@@ -61,8 +62,8 @@ textarea {
 .home-tag-item {
     color: #757575;
     background-color: #b7b6b6;
-    margin: 10px;   
-    padding: 10px;
+    margin: 0 10px;   
+    padding: 5px;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -95,7 +96,7 @@ textarea {
     flex: 1;
     color: white;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
 
 }
@@ -108,7 +109,8 @@ textarea {
     font-family: Roboto;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 64px;
+    line-height: 45px;
 }
 
 .question-detail-description {
@@ -121,8 +123,8 @@ textarea {
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .question-user-info {
@@ -134,7 +136,7 @@ textarea {
 .question-user-info-username {
     color: #eee;
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 27px;
     flex: 1;
@@ -189,9 +191,11 @@ textarea {
 
 .question-comment-text {
     flex: 1;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 400;
     color: #656565 ;
-    font-family: Roboto
+    font-family: Roboto;
+    margin-bottom: 14px;
 }
 
 .question-comment-datetime {
@@ -199,12 +203,12 @@ textarea {
     text-align: right;
     color: #bdbdbd ;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
 }
 
 .question-comment-answer-title {
-    font-size: 28px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -228,7 +232,7 @@ textarea {
 .question-comment-answer-content {
     color: #656565 ;
     font-family: Roboto;
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -328,7 +332,7 @@ textarea {
 .profile-title {
     color: #414141 ;
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 40px;
@@ -356,6 +360,7 @@ textarea {
     -webkit-border-radius: 25px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+    margin-bottom: 30px;
 }
 
 .endorse-title {

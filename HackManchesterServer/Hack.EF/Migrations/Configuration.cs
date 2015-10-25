@@ -54,30 +54,30 @@ namespace Hack.EF.Migrations
                 new User(1, "JonnyP", "Password123", "Jonny", "Pillar")
                 {
                     Bio =
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                        "Hi, I am Jonny. My interests include cycling, running and exploring. This means I can offer help with bikes or the countryside. I am a big fan of walks, especially in the North of England."
                     ,
-                    ProfileImageUrl = "http://api.randomuser.me/portraits/women/39.jpg"
+                    ProfileImageUrl = "http://imgur.com/R8H8F7k"
                 },
                 new User(2, "StuartC", "Password123", "Stuart", "Campbell")
                 {
                     Bio =
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                        "I am from Scotland but now live in the North of England. I was a gymnast when I was younger. My interests include crossfit and computers. I can help with general computer problems. I also have a degree in Economics. "
                     ,
-                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/women/40.jpg"
+                    ProfileImageUrl = "http://imgur.com/E21NnY3"
                 },
                 new User(3, "JigzL", "Password123", "Jigz", "Lad")
                 {
                     Bio =
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                        "Jignesh from Manchester. I am a designer for mobile apps and websites. I am a follower of Hinduism. I enjoy cooking, especially Mexican and Italian food."
                     ,
-                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/men/67.jpg"
+                    ProfileImageUrl = "http://imgur.com/3VuVmUz"
                 },
                 new User(4, "EmmaS", "Password123", "Emma", "Smith")
                 {
                     Bio =
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa nulla, facilisis ut nulla eget, condimentum vulputate tortor. Curabitur nec ipsum augue. Ut volutpat scelerisque dolor eget ultricies. Nulla condimentum mauris a tellus pulvinar sodales. Aliquam venenatis eros ac mauris tincidunt lacinia. Aenean lectus purus, pharetra a feugiat et, sodales ut nisi. Pellentesque tincidunt ipsum ut vulputate scelerisque. Donec malesuada, tortor in lobortis sagittis, magna dolor cursus dui, a feugiat felis augue nec enim. Nam at pulvinar dui. Nam vitae ligula sodales, porta orci id, malesuada ipsum. Ut eget mi a odio imperdiet pharetra sit amet sit amet elit. Etiam ligula elit, pretium nec semper ut, sagittis in diam. Vivamus quam leo, lacinia non orci sed, sodales tempus neque. Mauris interdum dictum mi, ac ornare justo. Praesent pharetra enim mattis mi gravida fringilla. Phasellus et malesuada mauris."
+                        "I am Emma. I am from the South of Englan but now live in the North. I enjoy running and crossfit. I went to uni studying Computing."
                     ,
-                    ProfileImageUrl = "https://randomuser.me/api/portraits/med/men/7.jpg"
+                    ProfileImageUrl = "http://imgur.com/qXSCuDC"
                 }
             };
 

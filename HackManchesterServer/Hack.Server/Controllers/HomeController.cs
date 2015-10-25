@@ -55,8 +55,8 @@ namespace Hack.Server.Controllers
         public HomeQuestionViewModel(Question question)
         {
             Id = question.Id;
-            Title = question.Title.Substring(0, 60) + "...";
-            Description = question.Description;
+            Title = question.Title.Length > 59 ? question.Title.Substring(0, 60) + "..." : question.Title;
+            Description = question.Description.Length > 59 ? question.Description.Substring(0, 60) + "..." : question.Description;
             if (question.QuestionTags.Count >= 1)
             {
                 ImageUrl = question.QuestionTags.First().ImageUrl;

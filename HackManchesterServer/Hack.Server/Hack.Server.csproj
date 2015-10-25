@@ -220,6 +220,7 @@
     <Content Include="Content\ic_no-content.png" />
     <Content Include="Content\ic_select %281%29.png" />
     <Content Include="Content\ic_select.png" />
+    <Content Include="Content\ic_share.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

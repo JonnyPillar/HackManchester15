@@ -47,7 +47,7 @@ textarea {
    -moz-hyphens: auto;
     -ms-hyphens: auto;
         hyphens: auto;
-    word-break: break-all
+    word-break: keep-all
 }
 
 .home-question-description {
@@ -79,6 +79,10 @@ textarea {
     -moz-border-radius: 10px;
     border-radius: 10px;
     height: 32px;
+}
+
+.home-tag-item:first-child {
+    margin-left: 0;
 }
 
 /*
@@ -312,15 +316,14 @@ textarea {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding-top: 50px;
 }
 
 .profile-header {
-    background-color: white;
+    background-color: #2196fe;
     flex: 1;
     text-align: center;
-    border-bottom: 4px solid #bdbdbd;
     padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 .profile-image {
@@ -344,7 +347,8 @@ textarea {
     font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 0px;
+    color: white;
 }
 
 .profile-bio {
@@ -352,7 +356,8 @@ textarea {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
-    padding: 30px 100px 0;
+    padding: 30px 100px ;
+    border-bottom: 4px solid #bdbdbd;
 }
 
 .endorse-title {
@@ -369,7 +374,7 @@ textarea {
     -webkit-border-radius: 25px;
     -moz-border-radius: 70px;
     border-radius: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
 }
 
 .endorse-title {

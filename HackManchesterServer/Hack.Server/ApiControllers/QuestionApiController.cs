@@ -18,32 +18,32 @@ namespace Hack.Server.ApiControllers
         {
         }
 
-        //[CustomAuthorise]
-        //[HttpPost]
-        //[Route("api/Questions/Submit")]
-        //public IHttpActionResult SubmitQuestion(SubmitQuestionRequest submitQuestionRequest)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest();
-        //    }
+        [CustomAuthorise]
+        [HttpPost]
+        [Route("api/Questions/Submit")]
+        public IHttpActionResult SubmitQuestion(SubmitQuestionRequest submitQuestionRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
 
-        //    var questionTags = new List<QuestionTag>();
-        //    foreach (var tag in submitQuestionRequest.QuestionTags)
-        //    {
-        //        var t = HackDbContext.QuestionTags.SingleOrDefault(x => x.Tag.Equals(tag.Name));
-        //        if (t != null)
-        //        {
-        //            questionTags.Add(t);
-        //        }
-        //    }
+            var questionTags = new List<QuestionTag>();
+            foreach (var tag in submitQuestionRequest.QuestionTags)
+            {
+                var t = HackDbContext.QuestionTags.SingleOrDefault(x => x.Tag.Equals(tag.Name));
+                if (t != null)
+                {
+                    questionTags.Add(t);
+                }
+            }
 
-        //    var question = new Question(submitQuestionRequest.Title, submitQuestionRequest.Description, questionTags,
-        //        DateTime.UtcNow, ApplicationContext.User.UserId);
-        //    HackDbContext.Questions.Add(question);
-        //    HackDbContext.SaveChanges();
+            var question = new Question(submitQuestionRequest.Title, submitQuestionRequest.Description, questionTags,
+                DateTime.UtcNow, ApplicationContext.User.UserId);
+            HackDbContext.Questions.Add(question);
+            HackDbContext.SaveChanges();
 
-        //    return Ok();
-        //}
+            return Ok();
+        }
     }
 }

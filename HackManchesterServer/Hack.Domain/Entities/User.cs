@@ -28,6 +28,7 @@ namespace Hack.Domain.Entities
         public string Bio { get; set; }
         public string ProfileImageUrl { get; set; }
         public List<Endorsement> Endorsements { get; set; }
+        public string Location { get; set; }
 
         public string GenerateToken()
         {

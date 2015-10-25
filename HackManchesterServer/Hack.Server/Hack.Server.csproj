@@ -154,6 +154,7 @@
     <Compile Include="ApiControllers\AccountApiController.cs" />
     <Compile Include="ApiControllers\BaseApiController.cs" />
     <Compile Include="ApiControllers\OfferApiController.cs" />
+    <Compile Include="ApiControllers\QuestionApiController.cs" />
     <Compile Include="ApiControllers\QuestionTagController.cs" />
     <Compile Include="ApplicationContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />

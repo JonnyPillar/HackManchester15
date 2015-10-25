@@ -19,6 +19,13 @@ namespace Hack.Domain.Entities
             QuestionTags = questionTags;
         }
 
+        public Question(string title, string description, List<QuestionTag> questionTags, DateTime questionUploadedDateTime, long userId)
+        {
+            Title = title;
+            Description = description;
+            QuestionTags = questionTags;
+        }
+
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime QuestionUploadedDateTime { get; set; }

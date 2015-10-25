@@ -34,6 +34,7 @@ namespace Hack.Domain.Entities
         public DateTime QuestionUploadedDateTime { get; set; }
         public User User { get; set; }
         public long UserId { get; set; }
+        public bool PeopleEnteredInQuestion { get; set; }
         public virtual ICollection<QuestionTag> QuestionTags { get; set; }
         public virtual ICollection<Offer> Offers { get; set; }
     }

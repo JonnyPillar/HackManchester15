@@ -70,7 +70,7 @@ namespace Hack.Server.ApiControllers
         [Route("api/Questions/Poll")]
         public IHttpActionResult PollQuestion()
         {
-            var questions = HackDbContext.Questions.Where(x => x.UserId == ApplicationContext.User.UserId);
+            var questions = HackDbContext.Questions.Where(x => x.UserId == ApplicationContext.User.UserId && x.PeopleEnteredInQuestion);
 
             var response = new List<PollQuestion>();
 

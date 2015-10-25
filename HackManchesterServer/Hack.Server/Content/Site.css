@@ -56,7 +56,8 @@ textarea {
     flex: 1;
     font-weight: 400;
     overflow: hidden;
-    word-break: break-all
+    word-break: break-all;
+    min-height: 70px;
 }
 
 .home-question-tags {
@@ -76,6 +77,7 @@ textarea {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    height: 32px;
 }
 
 /*

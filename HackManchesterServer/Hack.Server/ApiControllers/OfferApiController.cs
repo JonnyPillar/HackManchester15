@@ -7,6 +7,7 @@ using Hack.Domain.DataContracts.ApiResponses;
 using Hack.Domain.Entities;
 using Hack.Domain.Interfaces;
 using Hack.EF;
+using Hack.Server.Attributes;
 
 namespace Hack.Server.ApiControllers
 {
@@ -16,7 +17,8 @@ namespace Hack.Server.ApiControllers
             : base(hackDbContext, applicationContext)
         {
         }
-
+       
+        [CustomAuthorise]
         [HttpPost]
         [Route("api/Offers/Submit")]
         public IHttpActionResult SubmitOffer(SubmitOfferRequest submitOfferRequest)
@@ -34,6 +36,7 @@ namespace Hack.Server.ApiControllers
             return Ok();
         }
 
+        [CustomAuthorise]
         [HttpGet]
         [Route("api/Offers/{id:long}")]
         public IHttpActionResult GetOffersForQuestion(long id)

@@ -81,6 +81,10 @@ textarea {
     height: 32px;
 }
 
+.home-tag-item:first-child {
+    margin-left: 0;
+}
+
 /*
     Question
 

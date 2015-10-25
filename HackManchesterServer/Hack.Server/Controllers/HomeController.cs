@@ -31,10 +31,16 @@ namespace Hack.Server.Controllers
                 {
                     if (!HackDbContext.QuestionTags.Any(y => y.Tag == tag)) continue;
                     
-                    var sdfsdfds = HackDbContext.QuestionTags.Where(y => y.Tag == tag).ToList();
+                    var sdfsdfds = HackDbContext.QuestionTags.Where(y => y.Tag == tag);
                     var newQuestions = sdfsdfds.Select(x => x.Questions);
 
-                    temp.AddRange(newQuestions.Cast<Question>());
+                    foreach (var dfsdf in newQuestions)
+                    {
+                        foreach (var bcvcvb in dfsdf)
+                        {
+                            temp.Add(bcvcvb);
+                        }
+                    }
                 }
 
                 var questions = temp.OrderByDescending(x => x.QuestionUploadedDateTime);

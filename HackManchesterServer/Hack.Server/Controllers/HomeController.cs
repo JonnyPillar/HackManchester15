@@ -14,15 +14,32 @@ namespace Hack.Server.Controllers
         {
         }
 
-        public HomeController()
+        public ActionResult Index(string tags)
         {
-            
-        }
+            if (tags == null)
+            {
+                var questions = HackDbContext.Questions.ToList().OrderByDescending(x => x.QuestionUploadedDateTime);
+                return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+            }
+            else
+            {
+            var tagsArray = tags.Split(',');
 
-        public ActionResult Index(long id = 0)
-        {
-            var questions = HackDbContext.Questions.ToList().OrderByDescending(x => x.QuestionUploadedDateTime);
-            return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+                var temp = new List<Question>();
+
+                foreach (var tag in tagsArray)
+                {
+                    if (!HackDbContext.QuestionTags.Any(y => y.Tag == tag)) continue;
+                    
+                    var sdfsdfds = HackDbContext.QuestionTags.Where(y => y.Tag == tag).ToList();
+                    var newQuestions = sdfsdfds.Select(x => x.Questions);
+
+                    temp.AddRange(newQuestions.Cast<Question>());
+                }
+
+                var questions = temp.OrderByDescending(x => x.QuestionUploadedDateTime);
+                return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+            }
         }
 
         public ActionResult Asked(AskedRequesModel model)

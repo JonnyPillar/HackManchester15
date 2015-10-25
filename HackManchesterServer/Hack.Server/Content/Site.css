@@ -228,9 +228,16 @@ textarea {
 
 .question-comment-select-icon {
     margin-left: 20px;
-    width: 50px;
+    width: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: right;
+}
+
+
+.question-comment-select-icon img {
+    height: 40px;
+    width: 25px;
 }

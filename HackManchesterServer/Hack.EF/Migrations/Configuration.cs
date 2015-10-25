@@ -137,7 +137,10 @@ namespace Hack.EF.Migrations
                     DateTime.UtcNow, 1, new List<QuestionTag>
                     {
                         electricTag
-                    }),
+                    })
+                {
+                    Location = "London"
+                },
                 new Question(3,
                     "Any maths tutors or anyone whos really good at maths can help me with my school work please",
                     "So I am currently having problems solving this question that is in my maths test exam. I was wondering if someone is able to help me solve...",
@@ -151,7 +154,9 @@ namespace Hack.EF.Migrations
                     DateTime.UtcNow, 1, new List<QuestionTag>
                     {
                         natureTag
-                    })
+                    }){
+                    Location = "Paris"
+                }
             };
 
             questions.ForEach(q => context.Questions.AddOrUpdate(x => x.Id, q));

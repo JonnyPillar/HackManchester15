@@ -17,11 +17,15 @@
                 </div>
             }
         </div>
-        <div style="text-align: right; float: right;">
-            @Model.Timestamp
+        <div style="display: flex;">
+           
+            <div style="flex:1 ">
+                @Model.Location
+            </div>
+            <div style="text-align: right; flex:1 ">
+                @Model.Timestamp
+            </div>
         </div>
-        <div>
-            @Model.Location
-        </div>
+        
     </div>
 </div>

@@ -18,6 +18,7 @@ namespace Hack.Domain.Entities
             QuestionUploadedDateTime = questionUploadedDateTime;
             UserId = userId;
             QuestionTags = questionTags;
+            Location = "Manchester";
         }
 
         public Question(string title, string description, List<QuestionTag> questionTags, DateTime questionUploadedDateTime, long userId)
@@ -27,10 +28,13 @@ namespace Hack.Domain.Entities
             QuestionTags = questionTags;
             QuestionUploadedDateTime = questionUploadedDateTime;
             UserId = userId;
+            Location = "Manchester";
         }
 
         public string Title { get; set; }
         public string Description { get; set; }
+        public string Location { get; set; }
+        public bool InYourArea { get; set; }
         public DateTime QuestionUploadedDateTime { get; set; }
         public User User { get; set; }
         public long UserId { get; set; }

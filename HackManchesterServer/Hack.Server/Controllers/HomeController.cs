@@ -63,7 +63,13 @@ namespace Hack.Server.Controllers
             }
             Tags = question.QuestionTags.Select(x => new TagItem(x)).ToList();
             Timestamp = DateHelper.DateTimeGenerator(question.QuestionUploadedDateTime);
+            Location = question.Location;
+            InYourArea = question.InYourArea;
         }
+
+        public bool InYourArea { get; set; }
+
+        public string Location { get; set; }
 
         public string Timestamp { get; set; }
 

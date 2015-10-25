@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Hack.Domain.DataContracts.ApiRequests;
+using Hack.Domain.DataContracts.ApiResponses;
 using Hack.Domain.Entities;
 using Hack.Domain.Interfaces;
 using Hack.EF;
@@ -51,16 +52,36 @@ namespace Hack.Server.ApiControllers
         [Route("api/Questions/Enter/{id:long}")]
         public IHttpActionResult EnterQuestion(long id)
         {
+            var question = HackDbContext.Questions.SingleOrDefault(x => x.Id == id);
+
+            if (question == null)
+            {
+                return InternalServerError();
+            }
+            
+            question.PeopleEnteredInQuestion = true;
+            HackDbContext.SaveChanges();
 
             return Ok();
         }
 
         [CustomAuthorise]
-        [HttpPost]
-        [Route("api/Questions/Poll/{id:long}")]
-        public IHttpActionResult PollQuestion(long id)
+        [HttpGet]
+        [Route("api/Questions/Poll")]
+        public IHttpActionResult PollQuestion()
         {
-            return Ok();
+            var questions = HackDbContext.Questions.Where(x => x.UserId == ApplicationContext.User.UserId && x.PeopleEnteredInQuestion);
+
+            var response = new List<PollQuestion>();
+
+            foreach (var question in questions)
+            {
+                response.Add(new PollQuestion(question.Id, question.Title, question.Description));
+                question.PeopleEnteredInQuestion = false;
+            }
+            HackDbContext.SaveChanges();
+
+            return Ok(new PollResponse(response));
         }
 
         [CustomAuthorise]
@@ -68,17 +89,17 @@ namespace Hack.Server.ApiControllers
         [Route("api/Questions/Leave/{id:long}")]
         public IHttpActionResult LeaveQuestion(long id)
         {
+            var question = HackDbContext.Questions.SingleOrDefault(x => x.Id == id);
+
+            if (question == null)
+            {
+                return InternalServerError();
+            }
+
+            question.PeopleEnteredInQuestion = false;
+            HackDbContext.SaveChanges();
+
             return Ok();
         }
-    }
-
-    public class SubmitQuestionResponse
-    {
-        public SubmitQuestionResponse(long questionId)
-        {
-            QuestionId = questionId;
-        }
-
-        public long QuestionId { get; set; }
     }
 }

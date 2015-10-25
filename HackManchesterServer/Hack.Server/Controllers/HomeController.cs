@@ -14,6 +14,11 @@ namespace Hack.Server.Controllers
         {
         }
 
+        public HomeController()
+        {
+            
+        }
+
         public ActionResult Index(long id = 0)
         {
             var questions = HackDbContext.Questions.ToList().OrderBy(x => x.QuestionUploadedDateTime);

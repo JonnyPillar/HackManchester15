@@ -14,6 +14,11 @@ namespace Hack.Server.Controllers
             ApplicationContext = applicationContext;
         }
 
+        public BaseController()
+        {
+            
+        }
+
         public IApplicationContext ApplicationContext { get; private set; }
     }
 }

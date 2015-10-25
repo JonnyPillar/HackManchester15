@@ -64,6 +64,7 @@ textarea {
     display: flex;
     flex: 1;
     flex-direction: row;
+    margin-bottom: 2px;
 }
 
 .home-tag-item {

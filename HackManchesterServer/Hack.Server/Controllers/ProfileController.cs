@@ -36,9 +36,12 @@ namespace Hack.Server.Controllers
             Id = user.Id;
             Name = user.FullName();
             Bio = user.Bio;
+            Location = user.Location;
             ProfileImage = user.ProfileImageUrl;
             Endorsements = user.Endorsements.Select(x => new EndorsementItem(x)).ToList();
         }
+
+        public string Location { get; set; }
 
         public string ProfileImage { get; set; }
         public string Name { get; set; }

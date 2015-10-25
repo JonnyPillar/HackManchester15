@@ -55,7 +55,7 @@ namespace Hack.Server.Controllers
         public HomeQuestionViewModel(Question question)
         {
             Id = question.Id;
-            Title = question.Title;
+            Title = question.Title.Substring(0, 60) + "...";
             Description = question.Description;
             if (question.QuestionTags.Count >= 1)
             {

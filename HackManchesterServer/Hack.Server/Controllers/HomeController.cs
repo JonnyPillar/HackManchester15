@@ -17,9 +17,32 @@ namespace Hack.Server.Controllers
         public ActionResult Index(long id = 0)
         {
             var questions = HackDbContext.Questions.ToList().OrderBy(x => x.QuestionUploadedDateTime);
-            //var questions = hackDbContext.Questions.Where(x => x.Id == id).ToList();
             return View(questions.Select(x => new HomeQuestionViewModel(x)).ToList());
         }
+
+        public ActionResult Asked(AskedRequesModel model)
+        {
+            var user = HackDbContext.Users.First(x => x.Token == model.Token);
+            var questions = HackDbContext.Questions.Where(x => x.UserId == user.Id).ToList().OrderBy(x => x.QuestionUploadedDateTime);
+            return View("Index", questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+        }
+
+        public ActionResult Answered(AnsweredRequesModel model)
+        {
+            var user = HackDbContext.Users.First(x => x.Token == model.Token);
+            var questions = HackDbContext.Questions.Where(x => x.Offers.Any(y => y.SubmittedByUserId == user.Id)).ToList().OrderBy(x => x.QuestionUploadedDateTime);
+            return View("Index", questions.Select(x => new HomeQuestionViewModel(x)).ToList());
+        } 
+    }
+
+    public class AnsweredRequesModel
+    {
+        public string Token { get; set; }
+    }
+
+    public class AskedRequesModel
+    {
+        public string Token { get; set; }
     }
 
     public class HomeQuestionViewModel
